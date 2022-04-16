@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'animated_menu_uioDSFkG.ui'
+## Form generated from reading UI file 'animated_menu_uifZDQEK.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.2.3
 ##
@@ -16,7 +16,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
-    QMainWindow, QSizePolicy, QWidget)
+    QMainWindow, QPushButton, QSizePolicy, QVBoxLayout,
+    QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -33,6 +34,14 @@ class Ui_MainWindow(object):
 "	border-right: 2px;\n"
 "	border-style: solid;\n"
 "	border-color: #7E8080;\n"
+"}\n"
+"\n"
+"QPushButton{\n"
+"	background-color: white;\n"
+"	border-right: 2px;\n"
+"	border-style: solid;\n"
+"	border-color: #7E8080;\n"
+"	color: rgb(140, 140, 140);\n"
 "}")
         self.horizontalLayout = QHBoxLayout(self.centralwidget)
         self.horizontalLayout.setSpacing(0)
@@ -44,6 +53,24 @@ class Ui_MainWindow(object):
         self.menu_frame.setStyleSheet(u"")
         self.menu_frame.setFrameShape(QFrame.StyledPanel)
         self.menu_frame.setFrameShadow(QFrame.Raised)
+        self.verticalLayout = QVBoxLayout(self.menu_frame)
+        self.verticalLayout.setSpacing(0)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.pushButton = QPushButton(self.menu_frame)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setMinimumSize(QSize(50, 50))
+        self.pushButton.setMaximumSize(QSize(50, 50))
+
+        self.verticalLayout.addWidget(self.pushButton, 0, Qt.AlignTop)
+
+        self.frame = QFrame(self.menu_frame)
+        self.frame.setObjectName(u"frame")
+        self.frame.setFrameShape(QFrame.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Raised)
+
+        self.verticalLayout.addWidget(self.frame)
+
 
         self.horizontalLayout.addWidget(self.menu_frame)
 
@@ -77,6 +104,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Menu", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; font-weight:700; font-style:italic; color:#ffffff;\">Frame de conte\u00fado</span></p></body></html>", None))
     # retranslateUi
 
